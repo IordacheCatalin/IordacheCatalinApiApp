@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using FirstApiApp.DataContext;
 using Microsoft.Extensions.Options;
 using FirstApiApp.Services;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,8 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 
 builder.Services.AddTransient<IAnnouncementsRepository, AnnouncementsRepository>();
 builder.Services.AddTransient<IAnnouncementsService, AnnouncementsService>();
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
