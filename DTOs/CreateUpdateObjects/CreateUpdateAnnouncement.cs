@@ -17,14 +17,14 @@ namespace FirstApiApp.DTOs.CreateUpdateObjects
         public DateTime? ValidTo { get; set; }
 
 
-        public string Title { get; set; }
+        public string? Title { get; set; }
 
-        public string Text { get; set; }
+        public string? Text { get; set; }
 
 
         public DateTime? EventDate { get; set; }
 
 
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
     }
 }

@@ -96,15 +96,15 @@ namespace FirstApiApp.Repositories
             }
             if (announcement.ValidFrom.HasValue && announcement.ValidFrom != announcementFromDb.ValidFrom)
             {
-                announcementFromDb.ValidFrom = announcement.ValidFrom;
+                announcementFromDb.ValidFrom = (DateTime)announcement.ValidFrom;
             }
             if (announcement.ValidTo.HasValue && announcement.ValidTo != announcementFromDb.ValidTo)
             {
-                announcementFromDb.ValidTo = announcement.ValidTo;
+                announcementFromDb.ValidTo = (DateTime)announcement.ValidTo;
             }
             if (announcement.EventDate.HasValue && announcement.EventDate != announcementFromDb.EventDate)
             {
-                announcementFromDb.EventDate = announcement.EventDate;
+                announcementFromDb.EventDate = (DateTime)announcement.EventDate;
             }
 
             _context.Announcements.Update(announcementFromDb);
