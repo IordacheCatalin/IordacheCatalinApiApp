@@ -14,13 +14,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="6.1.0" />
     <PackageReference Include="NEST" Version="7.17.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\FirstApiAppTests\FirstApiAppTests.csproj" />
   </ItemGroup>
 
 </Project>

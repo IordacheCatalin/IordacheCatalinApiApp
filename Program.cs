@@ -60,6 +60,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 builder.Services.AddAuthorization();
 
+builder.Logging.AddLog4Net("log4net.config");
+
 
 var app = builder.Build();
 
